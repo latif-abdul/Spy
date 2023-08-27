@@ -1,6 +1,6 @@
 package model
 
-type Students struct {
-	Id   string `json:"id"`
-	Name string `json:"name"`
+type IpAddress struct {
+	Id        string `json:"id"`
+	IpAddress string `json:"ipaddress"`
 }

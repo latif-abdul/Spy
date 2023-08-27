@@ -2,11 +2,12 @@ package main
 
 import (
 	"net/http"
+	"spy-api/controller"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"github.com/oxlb/GoLangMysqlHelloWorld/controller"
-	"github.com/oxlb/GoLangMysqlHelloWorld/storage"
+	"github.com/latif-abdul/Spy/spy-api/controller"
+	"github.com/latif-abdul/Spy/spy-api/storage"
 )
 
 func main() {
@@ -19,7 +20,7 @@ func main() {
 
 	// Routes
 	e.GET("/", hello)
-	e.GET("/students", controller.GetStudents)
+	e.GET("/students", controller.GetIpAddress)
 
 	// Start server
 	e.Logger.Fatal(e.Start(":1323"))

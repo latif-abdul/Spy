@@ -5,7 +5,7 @@ import (
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	config "github.com/oxlb/GoLangMysqlHelloWorld/config"
+	config "github.com/latif-abdul/Spy/spy-api/config"
 )
 
 var DB *gorm.DB

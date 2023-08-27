@@ -1,9 +1,7 @@
-CREATE TABLE students (
-    id int,
-    name VARCHAR(255)
-);
-
-INSERT INTO students(id, name) VALUES
-(1,'A'),
-(2,'B'),
-(3,'C');
+CREATE TABLE ip_addresses(
+    id bigint,
+    ip_public varchar(255),
+    created_at timestamp,
+    updated_at timestamp,
+    deleted_at timestamp
+)
